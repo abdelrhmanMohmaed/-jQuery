@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+/*section home*/
+
+.over-lay {
+    background-color: rgba(214, 46, 51, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#home {
+    background-size: 100% 100%;
+    background-position: center center;
+    background-image: url(../imgs/events-heavenly-header.jpg);
+    height: 100vh;
+}
+
+.nav-links {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    left: -250;
+    box-shadow: 0 5px 1rem rgb(0, 0, 0, 2);
+    background-color: transparent;
+    z-index: 999999 !important;
+}
+
+.nav-links a {
+    margin-top: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    color: black !important;
+    margin-left: 50px;
+}
+
+.nav-links a:hover {
+    color: #783D4A !important;
+    transition: all 0.5s;
+}
+
+@media screen and (max-width:700px) {
+    .nav-links {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .nav-links a {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .nav-links .caption #open-nav {
+        cursor: pointer;
+        font-size: 30px;
+        float: left;
+        margin-left: 10px;
+        color: black;
+    }
+}
+
+#open-nav {
+    cursor: pointer;
+    font-size: 30px;
+    float: left;
+    margin-left: 10px;
+    color: white;
+}
+
+#open-nav:hover {
+    color: #783D4A !important;
+    transition: all 1.5s;
+}
+
+#close {
+    cursor: pointer;
+    color: black !important;
+    font-size: 35px;
+}
+
+/*section duration*/
+
+#duration {
+    background-image: url(../imgs/invitation-2508607__340.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+}
+
+.over-lay2 {
+    background-color: rgba(214, 46, 51, 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+.bord {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+    margin-top: 80px;
+    border: 2px solid rgb(29, 252, 9);
+    height: 150px;
+    width: 250px;
+    color: white
+}
+
+@media screen and (max-width:1200px) {
+    .bord {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 100px;
+        text-align: center;
+        border: 2px solid rgb(29, 252, 9);
+        height: 150px;
+        width: 150px;
+        color: white
+    }
+}
+
+@media screen and (max-width:768px) {
+    .bord {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+        border: 2px solid rgb(29, 252, 9);
+        height: 50px;
+        width: 100px;
+        color: white
+    }
+}
+
+/*section contact*/
+
+.small-icon {
+    float: left;
+    text-align: center;
+    border: 2px solid #999;
+    width: 40px;
+    height: 40px;
+    margin: 7px;
+    color: #783D4A;
+    text-decoration: none !important;
+}
+
+.small-icon:hover {
+    color: white !important;
+    background-color: #D62E33 !important;
+    transition: all 0.4s;
+}
+
+.form-control {
+    border-radius: 0 !important;
+    box-shadow: 0 5px 0.3rem rgb(0, 0, 0, 0.3);
+    margin-top: 15px;
+}
+
+#char {
+    font-size: 20px;
+    -webkit-text-stroke: 2px tomato;
+}
+
+.btn {
+    border-radius: 0px!important;
+}
+
+/*arrow back-home */
+
+.back-home i {
+    padding-top: 8px;
+}
+
+.back-home {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    background-color: black !important;
+    color: #fff !important;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 50%;
+    display: none;
+    z-index: 11;
+}
+
+.back-home:hover {
+    background-color: rgb(65, 65, 65) !important;
+    color: black !important;
+    transition: all 0.5s;
+}
+
+#details {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#details h3 {
+    padding: 15px;
+    margin: 0;
+    background-color: rgba(214, 46, 51, 0.6);
+    cursor: pointer;
+    color: white;
+}
+
+#details div {
+    font-size: 14px;
+    padding: 10px;
+    background-color: #CCCCCC;
+    display: none;
+}
